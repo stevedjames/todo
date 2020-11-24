@@ -8,6 +8,7 @@ function validate(){
         err= false;
         if(email.value=="admin"){
             error.innerHTML=" ";
+            pswderror.innerHTML=" ";
             if(pass.value=="12345"){
                 pswderror.innerHTML=" ";
                 callback(email,pass,err)

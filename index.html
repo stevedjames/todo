@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+
+  <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -10,38 +11,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>ToDo App</title>
 </head>
-<style>
-    body{
-        background-image: url(https://i.pinimg.com/originals/41/84/4f/41844f569fe2025d2d97879f711b19da.jpg);
-        background-size: cover;
+
+<body>
+  
+</div>
+  <div class="wrapper text-center" >
+    <div class="" style=" color: rgb(59, 180, 180); font-family: Lucida Console, Monaco, monospace;">
+      <h1>LOGIN</h1>
+    <div id="formContent" >
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="">
+        <img src="https://www.onmsft.com/wp-content/uploads/2019/05/todo.jpg" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form action="" onsubmit="return validate()" >
+        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username " required onchange="return validate()"> 
+        <label for="" id="error" style="color: rgba(240, 6, 6, 0.705); font-size: small;"></label>
         
-        z-index: 0;
-    }
-</style>
-<body background="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1092571024%2F0x0.jpg%3Ffit%3Dscale" style="background-color: #2C353C; ">
-    <div class="text-center" style="margin-top: 5em; color: lightcyan; font-family: Lucida Console, Monaco, monospace; margin-bottom: 3em;">
-        <h1>LOGIN</h1>
-    </div>
-    <div class="container " style="width: 40%;">
-    <form action="" onsubmit="return validate()">
-        <div class="form-group">
-          <label class="text-muted" for="exampleInputEmail1">Username</label>
-          <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter Username" onchange="return validate()">
-          <label for="" id="error" style="color: rgba(240, 6, 6, 0.705); font-size: small;"></label>
-          
-        </div>
-        <div class="form-group text-muted">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password" onchange="return pswd()">
-          <label for="" id="pswderror" style="color: red; font-size: small;"></label>
-          
-        </div>
-        <div class="text-center">
-        <button type="submit" class="btn btn-primary text-center" style="margin-top: 1em; margin-bottom: 2em; width: 50%;">Submit</button>
-    </div>
-    </form>
-    </div>
-    <script src="validate.js"></script>
+        <input type="password" class="form-control" id="password" placeholder="Password" required onchange="return validate()" >
+        <label for="" id="pswderror" style="color: red; font-size: small;"></label><br>
+        <br>
+        <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+  
+      <!-- Remind Passowrd -->
+      
+  </div>
+</body>
+<script src="validate.js"></script>
     <script> 
         $(window).ready(function () { 
 
@@ -58,6 +58,4 @@
   
         }) 
     </script> 
-   
-</body>
 </html>
