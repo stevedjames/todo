@@ -1,8 +1,7 @@
-<html>
-
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -11,26 +10,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>ToDo App</title>
 </head>
-
-<body>
-  <div class="body"></div>
-  <div class="grad"></div>
-  <div class="header">
-    <div>To-Do<span>App </span></div>
-  </div>
-  <br>
-  <div class="login">
-    <form action="" onsubmit="return validate()" >
-      <input type="text" placeholder="username" name="user" id="username"><br>
-      <label for="" id="error" style="color: rgba(240, 6, 6, 0.705); font-size: small;"></label><br>
-      <input type="password" placeholder="password" name="password" id="password"><br>
-      <label for="" id="pswderror" style="color: red; font-size: small;"></label>
-      <button type="submit" class="btn btn-primary text-center" style="margin-top: 1em; width: 76%;">Submit</button>
-
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/originals/41/84/4f/41844f569fe2025d2d97879f711b19da.jpg);
+        background-size: cover;
+        
+        z-index: 0;
+    }
+</style>
+<body background="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1092571024%2F0x0.jpg%3Ffit%3Dscale" style="background-color: #2C353C; ">
+    <div class="text-center" style="margin-top: 5em; color: lightcyan; font-family: Lucida Console, Monaco, monospace; margin-bottom: 3em;">
+        <h1>LOGIN</h1>
+    </div>
+    <div class="container " style="width: 40%;">
+    <form action="" onsubmit="return validate()">
+        <div class="form-group">
+          <label class="text-muted" for="exampleInputEmail1">Username</label>
+          <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter Username" onchange="return validate()">
+          <label for="" id="error" style="color: rgba(240, 6, 6, 0.705); font-size: small;"></label>
+          
+        </div>
+        <div class="form-group text-muted">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" onchange="return pswd()">
+          <label for="" id="pswderror" style="color: red; font-size: small;"></label>
+          
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn btn-primary text-center" style="margin-top: 1em; width: 50%;">Submit</button>
+    </div>
     </form>
-  </div>
-</body>
-<script src="validate.js"></script>
+    </div>
+    <script src="validate.js"></script>
     <script> 
         $(window).ready(function () { 
 
@@ -47,4 +58,6 @@
   
         }) 
     </script> 
+   
+</body>
 </html>
