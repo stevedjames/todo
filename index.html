@@ -10,11 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>ToDo App</title>
-    <script type = "text/javascript" >
-   function preventBack(){window.history.forward();}
-    setTimeout("preventBack()", 0);
-    window.onunload=function(){null};
-</script>
+   
 </head>
 
 <body>
@@ -22,21 +18,21 @@
 </div>
   <div class="wrapper text-center" >
     <div class="" style=" color: rgb(59, 180, 180); font-family: Lucida Console, Monaco, monospace;">
-      <h1>LOGIN</h1>
+      <h1 class= fadeIn first>LOGIN</h1>
     <div id="formContent" >
       <!-- Tabs Titles -->
   
       <!-- Icon -->
-      <div class="">
+      <div class=" fadeIn second">
         <img src="https://www.onmsft.com/wp-content/uploads/2019/05/todo.jpg" id="icon" alt="User Icon" />
       </div>
   
       <!-- Login Form -->
       <form action="" onsubmit="return validate()" >
-        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username " required > 
-        <label for="" id="error" style="color: rgba(240, 6, 6, 0.705); font-size: small;"></label>
+        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username " required   > 
+        <label for="" id="error" style="color: red; font-size: small;"></label>
         
-        <input type="password" class="form-control" id="password" placeholder="Password" required >
+        <input type="password" class="fadeIn third form-control" id="password" placeholder="Password" required   >
         <label for="" id="pswderror" style="color: red; font-size: small;"></label><br>
         <br>
         <input type="submit" class="fadeIn fourth" value="Log In" >
